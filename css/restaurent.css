@@ -1,0 +1,715 @@
+/* Restaurant Hero */
+
+.restaurant-hero{
+
+    height:50vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url("../images/luxury restaurant.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.restaurant-hero-content h1{
+
+    color:#fff;
+    font-size:60px;
+    margin-bottom:20px;
+
+}
+/* Breadcrumb */
+
+.breadcrumb{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+}
+
+.breadcrumb a{
+
+    color:#fff;
+    text-decoration:none;
+
+}
+
+.breadcrumb a:visited{
+
+    color:#fff;
+
+}
+
+.breadcrumb a:hover{
+
+    color:#d4af37;
+
+}
+
+.breadcrumb span{
+
+    color:#fff;
+
+}
+
+.breadcrumb .active{
+
+    color:#d4af37;
+
+}
+/* Our Restaurant */
+
+.our-restaurant{
+
+    padding:100px 0;
+
+}
+
+.restaurant-container{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.restaurant-image img{
+
+    width:100%;
+    border-radius:15px;
+
+    display:block;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.restaurant-content h5{
+
+    color:#d4af37;
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+
+}
+
+.restaurant-content h2{
+
+    font-size:45px;
+
+    margin-bottom:25px;
+
+}
+
+.restaurant-content p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+/* Signature Dishes */
+
+.signature-dishes{
+
+    padding:100px 0;
+    background:#f8f8f8;
+
+}
+
+.dishes-container{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.dish-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.dish-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.dish-card img{
+
+    width:100%;
+    height:250px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.dish-content{
+
+    padding:25px;
+
+}
+
+.dish-content h3{
+
+    margin-bottom:15px;
+
+}
+
+.dish-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.dish-content span{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:#d4af37;
+
+}
+/* Dining Section */
+
+.dining-section{
+    width:90%;
+    max-width:1400px;
+    margin:40px auto;
+    display:flex;
+    align-items:center;
+    gap:50px;
+    padding:60px 0;
+}
+
+
+/* Image */
+
+.dining-image{
+    flex:1;
+}
+
+.dining-image img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+
+/* Content */
+
+.dining-content{
+    flex:1;
+}
+
+.dining-content h2{
+    font-size:42px;
+    color:#d4af37;
+    margin-bottom:20px;
+    font-family:'Poppins', sans-serif;
+}
+
+.dining-content p{
+    color:#555;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+
+/* Features */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.features div{
+    background:#111;
+    color:white;
+    padding:18px;
+    border-radius:10px;
+    font-size:16px;
+    transition:.3s;
+}
+
+
+.features div:hover{
+    background:#d4af37;
+    color:#111;
+    transform:translateY(-5px);
+}
+/* Chefs Section */
+
+.chefs-section{
+    width:90%;
+    max-width:1400px;
+    margin:40px auto;
+    padding:30px 0;
+}
+
+
+/* Section Title */
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#777;
+    font-size:18px;
+}
+
+
+/* Chefs Grid */
+
+.chefs-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+
+/* Chef Card */
+
+.chef-card{
+    background:#111;
+    text-align:center;
+    border-radius:15px;
+    overflow:hidden;
+    padding-bottom:25px;
+    transition:.3s;
+}
+
+
+.chef-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+
+.chef-card h3{
+    color:white;
+    font-size:24px;
+    margin:20px 0 8px;
+}
+
+
+.chef-card p{
+    color:#d4af37;
+    font-size:16px;
+}
+
+
+/* Hover Effect */
+
+.chef-card:hover{
+    transform:translateY(-10px);
+}
+/* Reservation Section */
+
+.reservation-section{
+    min-height:600px;
+    background:
+    linear-gradient(rgba(0,0,0,.7),
+    rgba(0,0,0,.7)),
+    url("../images/book table.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:80px 20px;
+}
+
+
+/* Content */
+
+.reservation-content{
+    width:100%;
+    max-width:700px;
+    text-align:center;
+    color:white;
+}
+
+
+.reservation-content h2{
+    font-size:45px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+
+.reservation-content p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:40px;
+}
+
+
+/* Form */
+
+.reservation-content form{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+
+
+.reservation-content input,
+.reservation-content select{
+
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+
+    border-radius:8px;
+    font-size:16px;
+}
+
+
+/* Button */
+
+.reservation-content button{
+
+    grid-column:span 2;
+
+    padding:16px;
+
+    background:#d4af37;
+    color:#111;
+
+    border:none;
+    border-radius:30px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+.reservation-content button:hover{
+
+    background:white;
+    transform:translateY(-5px);
+
+}
+/* Testimonials Section */
+
+.testimonials-section{
+    width:90%;
+    max-width:1400px;
+    margin:80px auto;
+    padding:60px 0;
+}
+
+
+/* Title */
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#777;
+    font-size:18px;
+}
+
+
+/* Testimonials Grid */
+
+.testimonials-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+
+/* Card */
+
+.testimonial-card{
+
+    background:#111;
+    color:white;
+
+    padding:35px 25px;
+
+    border-radius:15px;
+    text-align:center;
+
+    transition:.3s;
+}
+
+
+.testimonial-card p{
+
+    font-size:17px;
+    line-height:1.8;
+    color:#ddd;
+
+    margin-bottom:25px;
+}
+
+
+.testimonial-card h3{
+
+    color:#d4af37;
+    font-size:22px;
+
+    margin-bottom:10px;
+}
+
+
+.testimonial-card span{
+
+    color:#d4af37;
+    font-size:20px;
+
+}
+
+
+/* Hover */
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* Restaurant CTA */
+
+.restaurant-cta{
+
+    height:400px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url("../images/dinning.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.cta-overlay{
+
+    color:white;
+    max-width:700px;
+
+}
+
+
+.cta-overlay h2{
+
+    font-size:42px;
+    margin-bottom:20px;
+
+}
+
+
+.cta-overlay p{
+
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:30px;
+
+}
+
+
+.cta-btn{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:#c59d5f;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+.cta-btn:hover{
+
+    background:#a87d3c;
+
+}
+/* Responsive */
+
+@media(max-width:900px){
+
+    .testimonials-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .testimonials-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    .section-title h2{
+        font-size:32px;
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+    .reservation-content h2{
+        font-size:32px;
+    }
+
+
+    .reservation-content form{
+        grid-template-columns:1fr;
+    }
+
+
+    .reservation-content button{
+        grid-column:span 1;
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .chefs-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .chefs-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .dining-section{
+        flex-direction:column;
+    }
+
+    .dining-image img{
+        height:350px;
+    }
+
+    .dining-content h2{
+        font-size:32px;
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+}

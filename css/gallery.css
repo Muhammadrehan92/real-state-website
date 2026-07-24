@@ -1,0 +1,230 @@
+/* Gallery Hero */
+
+.gallery-hero{
+
+    height:50vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url("../images/gallery.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.gallery-hero-content{
+
+    color:white;
+
+}
+
+
+.gallery-hero-content h1{
+
+    font-size:50px;
+    margin-bottom:15px;
+
+}
+
+
+.gallery-hero-content p{
+
+    font-size:18px;
+
+}
+
+
+
+/* Property Gallery */
+
+.property-gallery{
+
+    padding:80px 8%;
+
+}
+
+
+.gallery-title{
+
+    text-align:center;
+    margin-bottom:50px;
+
+}
+
+
+.gallery-title h2{
+
+    font-size:38px;
+    margin-bottom:15px;
+
+}
+
+
+.gallery-title p{
+
+    color:#666;
+    font-size:17px;
+
+}
+
+
+
+/* Gallery Grid */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.gallery-card{
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    height:300px;
+
+}
+
+
+.gallery-card img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+/* Gallery CTA */
+
+.gallery-cta{
+
+    height:400px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url("../images/dream property.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.gallery-cta-content{
+
+    color:white;
+
+    max-width:700px;
+
+}
+
+
+.gallery-cta-content h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+
+.gallery-cta-content p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+
+.gallery-cta .cta-btn{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:#c59d5f;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+.gallery-cta .cta-btn:hover{
+
+    background:#a87d3c;
+
+}
+
+
+.gallery-card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:600px){
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .gallery-hero-content h1{
+
+        font-size:35px;
+
+    }
+
+}

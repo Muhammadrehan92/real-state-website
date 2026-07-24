@@ -1,0 +1,292 @@
+/* Rooms Hero */
+
+.rooms-hero{
+
+    height:50vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("../images/luxury rooms.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.rooms-hero-content h1{
+
+    color:#fff;
+    font-size:60px;
+    margin-bottom:20px;
+
+}
+
+.breadcrumb{
+
+    display:flex;
+    justify-content:center;
+    gap:10px;
+
+}
+
+.breadcrumb a{
+
+    color:#fff;
+    text-decoration:none;
+
+}
+
+.breadcrumb a:hover{
+
+    color:#d4af37;
+
+}
+
+.breadcrumb span{
+
+    color:#fff;
+
+}
+
+.breadcrumb .active{
+
+    color:#d4af37;
+
+}
+/* Rooms Section */
+
+.rooms{
+    padding-bottom:60px;
+}
+
+.rooms .section-title{
+
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.rooms .section-title p{
+
+    margin-top:20px;
+    color:#666;
+    line-height:1.8;
+
+}
+
+.rooms-container{
+
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    align-items:stretch;
+
+}
+
+.room-card{
+
+    background:#fff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    display:flex;
+    flex-direction:column;
+
+}
+.room-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.room-card img{
+
+    width:100%;
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.room-content{
+
+    padding:25px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.room-content h3{
+
+    margin-bottom:15px;
+
+}
+
+.room-content p{
+
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+
+}
+
+.room-info{
+
+    display:flex;
+    justify-content:space-between;
+
+    margin-bottom:25px;
+
+    color:#666;
+
+}
+
+.room-info i{
+
+    color:#d4af37;
+
+}
+
+.room-footer{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:auto;
+}
+.room-footer h4{
+
+    color:#d4af37;
+
+}
+
+.room-footer span{
+
+    color:#666;
+    font-size:15px;
+
+}
+/* Amenities */
+
+
+.amenities{
+    padding-top:60px;
+}
+.amenities-container{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.amenity-card{
+
+    background:#fff;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.amenity-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.amenity-card i{
+
+    font-size:45px;
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+}
+
+.amenity-card h3{
+
+    font-size:22px;
+
+}
+/* Room CTA */
+
+.room-cta{
+
+    padding:120px 20px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),
+    rgba(0,0,0,.65)),
+    url("../images/room7.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    text-align:center;
+    margin-top: 60px;
+}
+
+.room-cta-content{
+
+    max-width:700px;
+    margin:auto;
+
+}
+
+.room-cta-content h2{
+
+    color:#fff;
+    font-size:48px;
+    margin-bottom:20px;
+
+}
+
+.room-cta-content p{
+
+    color:#eee;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:35px;
+
+}
