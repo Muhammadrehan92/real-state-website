@@ -529,3 +529,123 @@
     color:#d4af37;
 
 }
+
+
+/* Responsive Styles for About Page (768px Media Query) */
+@media (max-width: 768px){
+
+    .about-hero{
+        height: 45vh;
+        padding-top: 60px;
+    }
+
+    .about-hero-content h1{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .breadcrumb a,
+    .breadcrumb span{
+        font-size: 16px;
+    }
+
+    .our-story{
+        padding: 50px 0;
+    }
+
+    .story-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .story-image img{
+        height: 300px;
+    }
+
+    .story-content{
+        text-align: center;
+    }
+
+    .story-content h2{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .story-features{
+        justify-content: center;
+        gap: 25px;
+        margin: 25px 0;
+    }
+
+    .story-features h3{
+        font-size: 26px;
+    }
+
+    .mission-vision{
+        padding: 50px 0;
+    }
+
+    .mv-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .mv-card{
+        padding: 30px 20px;
+    }
+
+    .mv-card h2{
+        font-size: 24px;
+    }
+
+    .team{
+        padding: 50px 0;
+    }
+
+    .team-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .team-card img{
+        height: 240px;
+    }
+
+    .awards{
+        padding: 50px 0;
+    }
+
+    .awards-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .why-about{
+        padding: 50px 0;
+    }
+
+    .why-about-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .about-testimonials{
+        padding: 50px 0;
+    }
+
+    .about-testimonial-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-testimonial-card{
+        padding: 25px;
+    }
+}
+
+@media (max-width: 576px){
+    .team-container,
+    .why-about-container{
+        grid-template-columns: 1fr;
+    }
+}

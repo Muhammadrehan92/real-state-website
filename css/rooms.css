@@ -290,3 +290,63 @@
     margin-bottom:35px;
 
 }
+
+
+/* Responsive Styles for Rooms Page (768px Media Query) */
+@media (max-width: 768px){
+
+    .rooms-hero{
+        height: 45vh;
+        padding-top: 60px;
+    }
+
+    .rooms-hero-content h1{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .rooms{
+        padding-bottom: 40px;
+    }
+
+    .rooms .section-title h2{
+        font-size: 28px;
+    }
+
+    .rooms-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .room-card img{
+        height: 220px;
+    }
+
+    .amenities{
+        padding-top: 40px;
+    }
+
+    .amenities-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .amenity-card{
+        padding: 30px 15px;
+    }
+
+    .room-cta{
+        padding: 60px 20px;
+        margin-top: 40px;
+    }
+
+    .room-cta-content h2{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .room-cta-content p{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+}

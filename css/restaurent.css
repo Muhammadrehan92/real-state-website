@@ -713,3 +713,74 @@
     }
 
 }
+
+
+/* Responsive Styles for Restaurant Page (768px Media Query) */
+@media (max-width: 768px){
+
+    .restaurant-hero{
+        height: 45vh;
+        padding-top: 60px;
+    }
+
+    .restaurant-hero-content h1{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .about-restaurant,
+    .special-dishes,
+    .menu-section,
+    .chefs-section,
+    .reservation-section,
+    .testimonials-section{
+        padding: 50px 0;
+    }
+
+    .restaurant-grid,
+    .dishes-grid,
+    .dishes-container,
+    .menu-grid,
+    .chefs-grid,
+    .testimonials-grid{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .dish-card img{
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .dish-content{
+        padding: 20px;
+    }
+
+    .dish-content p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .dining-section{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .dining-image img{
+        height: 280px;
+    }
+
+    .dining-content h2{
+        font-size: 28px;
+    }
+
+    .reservation-content form{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .reservation-content button{
+        grid-column: span 1;
+    }
+}
