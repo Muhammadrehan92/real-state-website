@@ -67,8 +67,10 @@ header{
 }
 
 
-.nav-links a:hover{
+.nav-links a:hover,
+.nav-links a.active{
     color:#d4af37;
+    font-weight:600;
 }
 
 
@@ -1220,6 +1222,12 @@ header{
         padding: 8px 0;
         font-size: 16px;
         font-weight: 500;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active{
+        color: #d4af37;
+        font-weight: 600;
     }
 
     .btn{

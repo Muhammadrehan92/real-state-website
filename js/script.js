@@ -39,6 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Auto Highlight Active Nav Link Based On Current Page
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const allNavLinks = document.querySelectorAll('.nav-links a');
+    allNavLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPath || (currentPath === '' && href === 'index.html') || (currentPath === '/' && href === 'index.html')) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+
     const today = new Date();
     const todayStr = today.toISOString().split('T')[0];
 
