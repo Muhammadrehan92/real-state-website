@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="form-group">
                             <label><i class="fa-solid fa-calendar-days"></i> Check-in Date</label>
                             <div class="custom-date-input">
-                                <input type="date" required id="check-in-date" min="${todayStr}">
+                                <input type="text" required id="check-in-date" placeholder="mm/dd/yyyy" onfocus="(this.type='date'); this.min='${todayStr}'" onblur="if(!this.value)this.type='text'">
                             </div>
                         </div>
                         <div class="form-group">
                             <label><i class="fa-solid fa-calendar-days"></i> Check-out Date</label>
                             <div class="custom-date-input">
-                                <input type="date" required id="check-out-date" min="${todayStr}">
+                                <input type="text" required id="check-out-date" placeholder="mm/dd/yyyy" onfocus="(this.type='date'); this.min='${todayStr}'" onblur="if(!this.value)this.type='text'">
                             </div>
                         </div>
                     </div>

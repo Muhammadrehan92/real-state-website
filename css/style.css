@@ -574,9 +574,9 @@ header{
     width: 100%;
 }
 
-.custom-date-input input[type="date"] {
+.custom-date-input input {
     width: 100%;
-    padding: 14px 18px;
+    padding: 14px 45px 14px 18px;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -590,11 +590,28 @@ header{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.custom-date-input input[type="date"]::-webkit-calendar-picker-indicator {
-    cursor: pointer;
+.custom-date-input::after {
+    content: "\f133";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #222;
     font-size: 18px;
-    opacity: 0.85;
-    padding: 4px;
+    pointer-events: none;
+}
+
+.custom-date-input input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .booking-form input,

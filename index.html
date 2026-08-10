@@ -350,14 +350,14 @@
             <div class="form-group">
                 <label for="check-in"><i class="fa-solid fa-calendar-days"></i> Check-in Date</label>
                 <div class="custom-date-input">
-                    <input type="date" id="check-in" required placeholder="mm/dd/yyyy">
+                    <input type="text" id="check-in" required placeholder="mm/dd/yyyy" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="check-out"><i class="fa-solid fa-calendar-days"></i> Check-out Date</label>
                 <div class="custom-date-input">
-                    <input type="date" id="check-out" required placeholder="mm/dd/yyyy">
+                    <input type="text" id="check-out" required placeholder="mm/dd/yyyy" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
                 </div>
             </div>
 
