@@ -39,14 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const today = new Date();
+    const todayStr = today.toISOString().split('T')[0];
+
+    // Set minimum date to today without prefilling value
+    const inlineCheckIn = document.getElementById('check-in');
+    const inlineCheckOut = document.getElementById('check-out');
+    if (inlineCheckIn) inlineCheckIn.min = todayStr;
+    if (inlineCheckOut) inlineCheckOut.min = todayStr;
+
     // 2. Dynamic Booking Modal Creation
     if (!document.getElementById('booking-modal')) {
-        const today = new Date();
-        const tomorrow = new Date(today);
-        tomorrow.setDate(tomorrow.getDate() + 1);
-        const todayStr = today.toISOString().split('T')[0];
-        const tomorrowStr = tomorrow.toISOString().split('T')[0];
-
         const modalHTML = `
         <div class="booking-modal-overlay" id="booking-modal">
             <div class="booking-modal-container">
@@ -61,11 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="form-row">
                         <div class="form-group">
                             <label><i class="fa-solid fa-calendar-days"></i> Check-in Date</label>
-                            <input type="date" required id="check-in-date" value="${todayStr}" min="${todayStr}">
+                            <div class="custom-date-input">
+                                <input type="date" required id="check-in-date" min="${todayStr}">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label><i class="fa-solid fa-calendar-days"></i> Check-out Date</label>
-                            <input type="date" required id="check-out-date" value="${tomorrowStr}" min="${tomorrowStr}">
+                            <div class="custom-date-input">
+                                <input type="date" required id="check-out-date" min="${todayStr}">
+                            </div>
                         </div>
                     </div>
 
@@ -175,9 +182,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Bind all "Book Now", "Book Your Table" buttons across all pages
+    // Bind all standalone "Book Now", "Book Your Table" buttons across all pages (excluding form buttons)
     const bookButtons = document.querySelectorAll('.btn, .cta-btn, .outline-btn, a, button');
     bookButtons.forEach(btn => {
+        if (btn.closest('form')) return;
+
         const text = btn.textContent.trim().toLowerCase();
         if (text.includes('book now') || text.includes('book your table')) {
             btn.addEventListener('click', (e) => {
