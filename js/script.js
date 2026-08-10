@@ -325,4 +325,74 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 5. Universal Image Lightbox Feature
+    if (!document.getElementById('image-lightbox')) {
+        const lightboxHTML = `
+        <div class="image-lightbox-overlay" id="image-lightbox">
+            <button class="image-lightbox-close" id="close-lightbox" title="Close (Esc)">&times;</button>
+            <div class="image-lightbox-wrapper">
+                <img class="image-lightbox-content" id="lightbox-img" src="" alt="Enlarged View">
+                <div class="image-lightbox-caption" id="lightbox-caption"></div>
+            </div>
+        </div>`;
+        document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+    }
+
+    const lightbox = document.getElementById('image-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const closeLightboxBtn = document.getElementById('close-lightbox');
+
+    const openLightbox = (src, altText = '') => {
+        if (lightbox && lightboxImg) {
+            lightboxImg.src = src;
+            if (lightboxCaption) {
+                lightboxCaption.textContent = altText;
+                lightboxCaption.style.display = altText ? 'block' : 'none';
+            }
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    };
+
+    const closeLightbox = () => {
+        if (lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
+    if (closeLightboxBtn) {
+        closeLightboxBtn.addEventListener('click', closeLightbox);
+    }
+
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target.classList.contains('image-lightbox-wrapper')) {
+                closeLightbox();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+
+    // Make all images across all pages clickable to view in full size lightbox
+    document.addEventListener('click', (e) => {
+        const img = e.target.closest('img');
+        if (!img) return;
+
+        // Exclude logo, icons, small thumbnails
+        if (img.closest('.logo') || img.closest('.stars') || img.classList.contains('icon-img') || (img.naturalWidth && img.naturalWidth < 80)) {
+            return;
+        }
+
+        e.preventDefault();
+        const altText = img.getAttribute('alt') || '';
+        openLightbox(img.src, altText);
+    });
 });
