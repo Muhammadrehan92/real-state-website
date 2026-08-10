@@ -1312,6 +1312,46 @@ header{
         gap: 15px;
     }
 
+    .reservation-section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .reservation-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .reservation-container h1 {
+        font-size: 48px;
+        line-height: 1.15;
+        word-wrap: break-word;
+    }
+
+    .reservation-container p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 1.6;
+        word-wrap: break-word;
+    }
+
+    .reservation-form {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .reservation-form input,
+    .reservation-form select,
+    .reservation-form textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
     /* Statistics Section */
     .stats{
         padding: 40px 0;
